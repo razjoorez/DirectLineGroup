@@ -1,0 +1,27 @@
+@media only screen and (min-width: 1200px) {
+   
+    .title {
+        display: inline;
+        max-width: 15%;
+        
+        h3 {
+            font-size: 24px; 
+        }
+    }
+
+    .question {
+        max-width: 65%;
+        font-size: 20px;
+    }
+    .logo {
+        max-width: 40px;  
+    }
+
+    .svg-rotate__icon {
+        height: 40px;
+        width: 40px;
+     
+        }
+
+    
+}

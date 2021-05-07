@@ -1,0 +1,155 @@
+
+<div id="main" class="container-fluid">
+<div *ngIf="$faqs | async as faqs" class="container-fluid">
+  
+  <div class="row">
+    <div class="col-sm-12 col-md-2 col-lg-1">
+      
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-10">
+      <div class="cards">
+        <div class="card-body">
+        <h1>HAVE A QUESTION ? WE CAN HELP</h1> 
+        </div>
+      </div>
+      </div>
+    <div class="col-sm-12 col-md-2 col-lg-1"></div>
+  </div>
+ <div class="row">
+    <div class="col-sm-12 col-md-2 col-lg-1"></div>
+    <div class="col-sm-12 col-md-8 col-lg-10"></div>
+    <div class="col-sm-12 col-md-2 col-lg-1"></div>
+  </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-2 col-lg-1"></div>
+        <div class="col-sm-12 col-md-8 col-lg-10">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header opened" id="headingOne">
+                    <h2 class="mb-0">
+                      <button (click)="togClass('1')" id="button1" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="row">
+                          <div class="title col-sm-12 col-md-1 col-lg-1"><h3 >Q1</h3></div>
+                          <div class="question col-sm-12 col-md-9 col-lg-10"><span>{{faqs[0].question}}</span></div>
+                          <div class="logo col-sm-12 col-md-2 col-lg-1"  ><svg id="1"  class="svg-rotate__icon"    viewBox="-120 -100 600 600">
+                            <g id="add">
+                              <path class="plus-icon"  d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z" />
+                            </g>
+                          </svg></div>
+                        </div>
+                        
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                   <p>{{faqs[0].answer}}</p> 
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button (click)="togClass('2')" id="button2" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div style="display: block;">
+                          <div class="row">
+                            <div class="title col-sm-12 col-md-1 col-lg-1"><h3>Q2</h3></div>
+                            <div class="question col-sm-12 col-md-9 col-lg-10"><span>{{faqs[1].question}}</span></div>
+                            <div  class="logo col-sm-12 col-md-2 col-lg-1" ><svg id="2" class="svg-rotate__icon"   width="40px" height="40px" viewBox="-120 -100 600 600">
+                              <g id="add">
+                                <path d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z"/>
+                              </g>
+                            </svg></div>
+                          </div>
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <p>{{faqs[1].answer}}</p> 
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button (click)="togClass('3')" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="row">
+                          <div class="title col-sm-12 col-md-1 col-lg-1"><h3>Q3</h3></div>
+                          <div class="question col-sm-12 col-md-9 col-lg-10"><span>{{faqs[2].question}}</span></div>
+                          <div class="logo col-sm-12 col-md-2 col-lg-1" ><svg id="3" class="svg-rotate__icon" width="40px" height="40px" viewBox="-120 -100 600 600">
+                            <g id="add">
+                              <path d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z"/>
+                            </g>
+                          </svg></div>
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <p>{{faqs[2].answer}}</p> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button (click)="togClass('4')" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <div class="row">
+                          <div class="title col-sm-12 col-md-1 col-lg-1"><h3>Q4</h3></div>
+                          <div class="question col-sm-12 col-md-9 col-lg-10"><span>{{faqs[3].question}}</span></div>
+                          <div class="logo col-sm-12 col-md-2 col-lg-1" ><svg id="4" class="svg-rotate__icon" width="40px" height="40px" viewBox="-120 -100 600 600">
+                            <g id="add">
+                              <path d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z"/>
+                            </g>
+                          </svg></div>
+                        </div>
+                        
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                   <p>{{faqs[3].answer}}</p> 
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                      <button   (click)="togClass('5')" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <div class="row">
+                          <div class="title col-sm-12 col-md-1 col-lg-1"><h3>Q5</h3></div>
+                          <div class="question col-sm-12 col-md-9 col-lg-10"><span>{{faqs[4].question}}</span></div>
+                          <div  class="logo col-sm-12 col-md-2 col-lg-1" ><svg id="5" class="svg-rotate__icon" width="40px" height="40px" viewBox="-120 -100 600 600">
+                            <g id="add">
+                              <path d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z"/>
+                            </g>
+                          </svg></div>
+                        </div>
+                        
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                   <p>{{faqs[4].answer}}</p> 
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-2 col-lg-1"></div>
+    </div>
+</div>
+
+
+</div>

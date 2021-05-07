@@ -1,0 +1,163 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+@import 'small';
+@import 'medium';
+@import 'large';
+
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('./assets/fonts/oswald-light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'oswald_regular';
+    src: url('./assets/fonts/oswald-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('./assets/fonts/oswald-bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    overflow: scroll;
+}
+
+p{
+    font-family: 'oswaldlight';
+    color:black;
+}
+
+h1 {
+    font-family: 'oswaldbold';
+}
+
+h3 {
+    font-family: 'oswald_regular';
+    float:left;
+}
+
+span{
+
+    font-family: 'oswald_regular';
+    float:left;
+    margin-top: 2px;
+}
+
+#headingOne {
+
+    background-color: $accordion_active_colour;
+}
+.card-header {
+    background-color: red;
+}
+
+
+
+
+.logo {
+    background-color:$logo_background_colour;   
+}
+
+
+
+.svg-rotate__icon.collapsed {
+    //Chrome
+   -webkit-animation-name: rotate;
+   -webkit-animation-duration: 1s;
+   //Firefox
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 1s;
+    animation-name: rotate;
+    animation-duration: 1s;
+   }
+   .svg-rotate__icon.closed {
+    -webkit-animation-name: rotate_back;
+    -webkit-animation-duration: 1s;
+     -moz-animation-name: rotate_back;
+     -moz-animation-duration: 1s;
+       animation-name: rotate_back;
+       animation-duration: 1s;
+      }
+
+   .svg-rotate__icon {
+       height: 40px;
+      max-width: 40px;
+       }
+
+  @keyframes rotate {
+       0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(180deg);
+        }
+    }
+
+    @keyframes rotate {
+        0% {
+            -moz-transform: rotate(0deg);
+        }
+        100% {
+            -moz-transform: rotate(90deg);
+        }
+    }
+
+   @keyframes rotate {
+       0% {
+           transform: rotate(0deg);
+       }
+       100% {
+           transform: rotate(90deg);
+       }
+   }
+   @keyframes rotate_back {
+    0% {
+        -webkit-transform: rotate(90deg);
+    }
+    100% {
+       -webkit-transform: rotate(0deg);
+    }
+   }
+  @keyframes rotate_back {
+      0% {
+         -moz-transform: rotate(90deg);
+     }
+      100% {
+        -moz-transform: rotate(0deg);
+     }
+   }
+   @keyframes rotate_back {
+       0% {
+           transform: rotate(90deg);
+       }
+       100% {
+           transform: rotate(0deg);
+       }
+   }
+
+
+
+%common {
+    padding: .25em;
+    border: 1px ;
+}
+
+.accordion--header-normal{
+    @extend %common;
+    background-color: white;
+}
+.accordion--header-extended {
+    @extend %common;
+    background-color: grey;
+}
+
+ 
+
+ 

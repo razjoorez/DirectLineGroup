@@ -1,0 +1,72 @@
+@import '../../variables';
+.cards {
+    border-style: none none solid none;
+    border-width: 20px;
+    
+   
+}
+#headingOne.opened {
+    background-color:$accordion_active_colour;
+}
+
+#headingOne.closed {
+    background-color:$accordion_inactive_colour;
+}
+
+#headingTwo.opened {
+    background-color: $accordion_active_colour;
+}
+
+#headingTwo.closed {
+    background-color: $accordion_inactive_colour;
+}
+
+#headingThree.opened {
+    background-color:$accordion_active_colour;
+}
+
+#headingThree.closed {
+    background-color: $accordion_inactive_colour;
+}
+
+#headingFour.opened {
+    background-color: $accordion_active_colour;
+}
+
+#headingFour.closed {
+    background-color: $accordion_inactive_colour;
+}
+
+#headingFive.opened {
+    background-color: $accordion_active_colour;
+}
+
+#headingFive.closed {
+    background-color:$accordion_inactive_colour;
+}
+
+#headingOne {
+
+    background-color: $accordion_active_colour;
+}
+
+.btn-link:hover {
+    color:black;
+    text-decoration: underline;
+  }
+
+  .btn-link {
+   // font-weight: 400;
+    color:black;
+    text-decoration: none;
+  }
+
+  .btn {
+      width: 100%;
+  }
+
+  .btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
